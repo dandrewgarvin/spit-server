@@ -48,7 +48,7 @@ app.get("/api/v1/session/list", (req, res) => {
       sessions,
     },
   });
-}); // done || find all sessions in range
+}); // find all sessions in range
 
 app.get("/api/v1/session/find", (req, res) => {
   const { id } = req.body;
@@ -64,7 +64,7 @@ app.get("/api/v1/session/find", (req, res) => {
     err: null,
     data: game || "No game found",
   });
-}); // done || find single session by id
+}); // find single session by id
 
 // ========== ADMIN ENDPOINTS ========== //
 app.post("/api/v1/admin/session", (req, res) => {
@@ -91,7 +91,7 @@ app.post("/api/v1/admin/session", (req, res) => {
       data: null,
     });
   }
-}); // done || admin create session
+}); // admin create session
 
 app.delete("/api/v1/admin/session", (req, res) => {
   const { id } = req.body;
@@ -111,7 +111,7 @@ app.delete("/api/v1/admin/session", (req, res) => {
     err: null,
     data: game,
   });
-}); // done || admin delete session
+}); // admin delete session
 
 app.post("/api/v1/admin/question", (req, res) => {
   try {
