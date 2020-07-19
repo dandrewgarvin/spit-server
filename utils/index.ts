@@ -1,5 +1,3 @@
-import generateUuid from './generateUuid';
+import generateUuid from "./generateUuid";
 
-export {
-  generateUuid
-}
+export { generateUuid };
